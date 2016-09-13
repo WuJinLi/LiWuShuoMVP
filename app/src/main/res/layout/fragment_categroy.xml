@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_theme_window_background"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@color/pager_tab_selector"
+        >
+        <android.support.design.widget.TabLayout
+            app:tabSelectedTextColor="@color/action_bar_action_text"
+            app:tabIndicatorColor="@color/action_bar_action_text"
+            app:tabTextColor="@color/action_bar_action_text"
+            android:id="@+id/tablayout_categroy_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:tabIndicatorHeight="2dp"
+            />
+        <TextView
+            android:id="@+id/textview_categroy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@color/light_theme_channel_edit_view_bg"
+        android:id="@+id/linearlayout_categroy_search"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+        >
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_editor_search"
+            />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中秋佳节，为Ta选一份心意好礼吧"
+            />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/viewpager_category_viewpager"
+        />
+</LinearLayout>

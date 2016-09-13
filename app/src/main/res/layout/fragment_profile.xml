@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="@drawable/bg_profile"
+        >
+        <ImageView
+            android:id="@+id/imageview_profile_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ig_profile_photo_default"
+            />
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_profile_nickname"
+            android:layout_below="@+id/imageview_profile_photo"
+            android:layout_alignLeft="@+id/imageview_profile_photo"
+            android:layout_alignRight="@+id/imageview_profile_photo"
+            android:layout_marginTop="10dp"
+            android:text="请登录"
+            android:textColor="@color/white"
+            />
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageview_profile_message"
+            android:background="@drawable/icon_message"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageview_prifile_setting"
+            android:background="@drawable/me_settings"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignBottom="@+id/imageview_profile_message"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageview_profile_scan"
+            android:layout_toLeftOf="@+id/imageview_prifile_setting"
+            android:layout_alignBottom="@+id/imageview_prifile_setting"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/icon_scan"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        >
+
+        <Button
+            android:id="@+id/button_profile_car"
+            style="@style/NavibarBtnStyle"
+            android:drawableTop="@drawable/icon_cart"
+            android:text="购物车" />
+
+        <Button
+            android:id="@+id/button_profile_order"
+            style="@style/NavibarBtnStyle"
+            android:drawableTop="@drawable/icon_order"
+            android:text="订单" />
+
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/button_profile_gif"
+            style="@style/NavibarBtnStyle"
+            android:drawableTop="@drawable/icon_coupon"
+            android:text="礼券" />
+
+        <Button
+            android:id="@+id/button_profile_attention"
+            style="@style/NavibarBtnStyle"
+            android:drawableTop="@drawable/icon_follow"
+            android:text="关注" />
+        <Button
+            android:id="@+id/button_profile_service"
+            style="@style/NavibarBtnStyle"
+            android:drawableTop="@drawable/icon_service"
+            android:text="客服" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:orientation="vertical"
+        >
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout_profile_tab"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_profile_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"/>
+    </LinearLayout>
+</LinearLayout>

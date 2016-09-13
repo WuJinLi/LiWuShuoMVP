@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PresentPJ</string>
+
+    <array name="tabTitles">
+        <item>攻略</item>
+        <item>单品</item>
+    </array>
+    <array name="sdtabTitles">
+        <item>单品</item>
+        <item>攻略</item>
+    </array>
+</resources>

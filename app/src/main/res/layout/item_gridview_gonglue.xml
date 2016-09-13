@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:padding="5dp"
+              android:layout_width="170dp"
+              android:layout_height="90dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/imageview_item_gonglue"
+        android:scaleType="fitXY"
+        />
+</RelativeLayout>

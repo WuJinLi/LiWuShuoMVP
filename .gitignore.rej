@@ -1,0 +1,14 @@
+diff a/.gitignore b/.gitignore	(rejected hunks)
+@@ -1,8 +1,9 @@
+ *.iml
+ .gradle
+ /local.properties
+-/.idea/workspace.xml
+-/.idea/libraries
++/.idea
++/.idea
+ .DS_Store
+ /build
+ /captures
++/library/build
+\ No newline at end of file
